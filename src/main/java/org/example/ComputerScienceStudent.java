@@ -1,6 +1,6 @@
 package org.example;
 
-public class ComputerScienceStudent implements Citizen{
+public class ComputerScienceStudent extends Student implements Citizen{
 
 
     @Override
@@ -11,6 +11,11 @@ public class ComputerScienceStudent implements Citizen{
     @Override
     public int getIdentityCardNumber() {
         return 0;
+    }
+
+    @Override
+    public boolean isGraduated() {
+        return false;
     }
 }
 
