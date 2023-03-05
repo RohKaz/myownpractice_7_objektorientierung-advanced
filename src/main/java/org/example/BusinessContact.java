@@ -19,6 +19,25 @@ public class BusinessContact extends Contact {
         return contacts.get(index);
     }
 
+    public Contact getContactByName(String name) {
+        for (Contact contact : contacts) {
+            if (contact.getName().equals(name)) {
+                return contact;
+            }
+        }
+        return null;
+    }
+
+    public Contact removeContactByName(String name) {
+        for (Contact contact : contacts) {
+            if (contact.getName().equals(name)) {
+                contacts.remove(contact);
+                return contact;
+            }
+        }
+        return null;
+    }
+
     public BusinessContact(String companyName, String name) {
         super(name);
         this.companyName = companyName;
