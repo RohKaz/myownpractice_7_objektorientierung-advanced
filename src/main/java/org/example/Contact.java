@@ -3,6 +3,7 @@ package org.example;
 public abstract class Contact {
 
     String name;
+    int index;
 
     public Contact(String name) {
         this.name = name;
